@@ -5,10 +5,9 @@ const INITIAL_STATE = {
 	submitting: false
 }
 
-export default (state = INITIAL_STATE, action){
+export const reducer =  (state = INITIAL_STATE, action)=>{
 	switch(action.type){
-
 		default:
-			return INITIAL_STATE;
+			return state;
 	}
 }

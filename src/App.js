@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import LoginForm from './LoginForm';
+import {reducer} from './reducer.js';
 import './App.css';
 
-const reducer = () => {};
 const store = createStore(reducer);
 
 class App extends Component {
