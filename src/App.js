@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import LoginForm from './LoginForm';
+import './App.css';
+
+const reducer = () => {};
+const store = createStore(reducer);
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <Provider className="App" store={store}>
         <LoginForm/>
-      </div>
+      </Provider>
     );
   }
 }
