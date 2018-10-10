@@ -36,7 +36,6 @@ export const reducer =  (state = INITIAL_STATE, action)=>{
 		case SUBMIT_FORM:
 			//TODO: Handle using redux-saga
 			console.log(state.form);
-			break;
 		default:
 			return state;
 	}
